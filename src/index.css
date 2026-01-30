@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #fffef7;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(217, 217, 217, 0.05), rgba(197, 197, 198, 0.05)), url('/quinceanera.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-type: x proximity;
+  color: #333;
+
+}
+
+.home h1 {
+  font-family: 'Yellowtail', cursive;
+  user-select: none;
+}
+
+.home p {
+  font-family: 'Cookie', cursive;
+  user-select: none;
+}
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: #4A90E2;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+
+.cuenta-regresiva {
+  border: 0.5px solid whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  user-select: none;
+}
+
+.fecha {
+  font-size: 1.5rem !important;
+  user-select: none;
+}
+
+#mensaje {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('/joceline.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+#mensaje_padres {
+  background: url('/quinceanera_3.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+#padres_dos {
+  background: linear-gradient(rgba(217, 217, 217, 0.05), rgba(197, 197, 198, 0.05)), url('/quinceanera_1.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover !important;
+}
+
+#padres_tres {
+  background: url('/quinceanera_2.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+#ceremonia {
+  background-color: #fffef7;
+}
+
+#ayuda {
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+#aviso {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(107, 107, 108, 0.55)), url('/vestimenta.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+#aviso_text {
+  text-wrap: balance;
+}
+
+
+#celebracion {
+  background-color: #fffef7;
+}
+
+@media (max-width:768px) {
+  #mensaje {
+    background: #fffef7;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover !important;
+  }
+}
